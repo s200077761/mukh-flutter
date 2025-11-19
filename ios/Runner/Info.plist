@@ -47,3 +47,27 @@
 	<true/>
 </dict>
 </plist>
+<key>NSLocalNetworkUsageDescription</key>
+<string>Mukh needs local network access for communication</string>
+<key>NSBonjourServices</key>
+<array>
+<string>_http._tcp</string>
+<string>_https._tcp</string>
+</array>
+<key>NSAppTransportSecurity</key>
+<dict>
+<key>NSAllowsArbitraryLoads</key>
+<false/>
+<key>NSExceptionDomains</key>
+<dict>
+<key>localhost</key>
+<dict>
+<key>NSIncludesSubdomains</key>
+<true/>
+<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+<true/>
+</dict>
+</dict>
+</dict>
+</dict>
+</plist>
